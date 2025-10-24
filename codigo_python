@@ -1,0 +1,19 @@
+Código Python:
+
+estoque = 10
+
+vendas = int(input('Quantas vendas serão feitas? '))
+
+while estoque != 0:
+        if estoque >= vendas:
+            estoque -= vendas
+            print(f'Venda aprovada. O seu novo estoque é de {estoque} peças.')
+            if estoque != 0:
+                continue
+            else:
+                print("Estoque esgotado.")
+                break
+        vendas = int(input('Quantas vendas serão feitas? '))
+        
+else:
+        print(f'Estoque esgotado')
